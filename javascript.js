@@ -1,7 +1,16 @@
-function playRound(playerSelection, computerSelection) {
-    const playerSelection = prompt("Enter here: ", "Rock-Paper-Scissors" )
-    // your code here!
-  }
-   
-  
-  
+let getComputerChoice = (value) => {
+    
+    switch(Math.floor(Math.random()*3)) {
+        case 0:
+            return "rock";
+            break;
+        case 1:
+            return "paper";
+            break;
+        case 2:
+            return "scissors";
+            break;
+
+
+    }
+}
