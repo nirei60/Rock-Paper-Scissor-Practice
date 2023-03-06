@@ -29,7 +29,7 @@ function game(){
             
         };
         
-for (let i = 0; i < 5; i++){ 
+for (let i = 0; i < 6; i++){ 
     function playRound(playerSelection, computerSelection) {
         if (playerSelection !== 'rock' && playerSelection !== 'scissors' && playerSelection !== 'paper'){i-- ;alert('Enter rock, paper, or scissors!');}
         else if (playerSelection === 'rock' && computerSelection === 'scissors' || playerSelection === 'scissors' && computerSelection === 'paper' || playerSelection === 'paper' && computerSelection === 'rock')
@@ -40,7 +40,7 @@ for (let i = 0; i < 5; i++){
    
 
     }
-    if (i==4){
+    if (i===5){
         const winner = () => {
             if (player_score > computer_score){console.log("You are the winner!");}
             else if (player_score < computer_score){console.log("Computer wins!");}
